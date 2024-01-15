@@ -1,0 +1,63 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/app.js",
+    "build": "tsc -p .",
+    "dev": "nodemon --watch \"src/**/*.ts\" --exec \"ts-node\" src/app.ts",
+    "deploy": "firebase deploy --only functions"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.16",
+    "@types/node": "^18.11.19",
+    "express": "^4.18.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.1.3",
+    "@types/busboy": "^1.5.0",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/crypto-js": "^4.1.1",
+    "@types/express-serve-static-core": "^4.17.33",
+    "@types/express-useragent": "^1.0.2",
+    "@types/firebase": "^3.2.1",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/multer": "^1.4.3",
+    "@types/multiparty": "^0.0.33",
+    "@types/nodemailer": "^6.4.7",
+    "body-parser": "^1.20.1",
+    "busboy": "^1.6.0",
+    "busboy-firebase": "^1.0.8",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "express-useragent": "^1.0.15",
+    "firebase": "^9.17.1",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.1",
+    "formidable-serverless": "^1.1.1",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.40",
+    "mongoose": "^6.9.0",
+    "multer": "^1.4.3",
+    "multer-firebase-storage": "^4.1.2",
+    "multiparty": "^4.2.3",
+    "nodemailer": "^6.9.1",
+    "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": "16"
+  }
+}
